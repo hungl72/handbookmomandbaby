@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>HandBookMomAndBaby</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+	<servlet-name>ControllersPublicIndex</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicIndex</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicIndex</servlet-name>
+	<url-pattern>/index</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicListNews</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicListNews</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicListNews</servlet-name>
+	<url-pattern>/listnews</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicNews</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicNews</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicNews</servlet-name>
+	<url-pattern>/news</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicLogin</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicLogin</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicLogout</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicLogout</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicLogout</servlet-name>
+	<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicSignup</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicSignup</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicSignup</servlet-name>
+	<url-pattern>/signup</url-pattern>
+</servlet-mapping>
+ <servlet>
+	<servlet-name>ControllersPublicProduct</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicProduct</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicProduct</servlet-name>
+	<url-pattern>/product</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>ControllersPublicDetailProduct</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicDetailProduct</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicDetailProduct</servlet-name>
+	<url-pattern>/detailproduct</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>PublicControllersAjaxPlusMinus</servlet-name>
+	<servlet-class>controllers.publics.PublicControllersAjaxPlusMinus</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>PublicControllersAjaxPlusMinus</servlet-name>
+	<url-pattern>/plusminus</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>ControllersPublicCommentNews</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicCommentNews</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicCommentNews</servlet-name>
+	<url-pattern>/commentnews</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>ControllersPublicContact</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicContact</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicContact</servlet-name>
+	<url-pattern>/contact</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>ControllersPublicAjaxCommentChildren</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicAjaxCommentChildren</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicAjaxCommentChildren</servlet-name>
+	<url-pattern>/commentchildren</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PublicStarController</servlet-name>
+	<servlet-class>controllers.publics.PublicStarController</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>PublicStarController</servlet-name>
+	<url-pattern>/ajaxstar</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicSearch</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicSearch</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicSearch</servlet-name>
+	<url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicFaq</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicFaq</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicFaq</servlet-name>
+	<url-pattern>/faq</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicUpdateQuestionAuto</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicUpdateQuestionAuto</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicUpdateQuestionAuto</servlet-name>
+	<url-pattern>/repquestionauto</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicFixQuestion</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicFixQuestion</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicFixQuestion</servlet-name>
+	<url-pattern>/fixquestion</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPulbicUpdateWaiting</servlet-name>
+	<servlet-class>controllers.publics.ControllersPulbicUpdateWaiting</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPulbicUpdateWaiting</servlet-name>
+	<url-pattern>/updatewaiting</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminIndexControllers</servlet-name>
+	<servlet-class>controllers.admins.index.AdminIndexControllers</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminIndexControllers</servlet-name>
+	<url-pattern>/adminindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminIndexAddMenu</servlet-name>
+	<servlet-class>controllers.admins.index.AdminIndexAddMenu</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminIndexAddMenu</servlet-name>
+	<url-pattern>/addmenu</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminIndexPosts</servlet-name>
+	<servlet-class>controllers.admins.index.AdminIndexPosts</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminIndexPosts</servlet-name>
+	<url-pattern>/posts</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LoginController</servlet-name>
+	<servlet-class>controllers.admins.auth.LoginController</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginController</servlet-name>
+	<url-pattern>/loginadmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LogoutController</servlet-name>
+	<servlet-class>controllers.admins.auth.LogoutController</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LogoutController</servlet-name>
+	<url-pattern>/logoutadmin</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+	<servlet-name>PublicMessageControllers</servlet-name>
+	<servlet-class>controllers.publics.PublicMessageControllers</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>PublicMessageControllers</servlet-name>
+	<url-pattern>/usermessage</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllersAdminMessage</servlet-name>
+	<servlet-class>controllers.admins.message.ControllersAdminMessage</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminMessage</servlet-name>
+	<url-pattern>/adminmessage</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllersAdminLastMessage</servlet-name>
+	<servlet-class>controllers.admins.message.ControllersAdminLastMessage</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminLastMessage</servlet-name>
+	<url-pattern>/adminlastmessage</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllerPublicAjaxCheckStatus</servlet-name>
+	<servlet-class>controllers.publics.ControllerPublicAjaxCheckStatus</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllerPublicAjaxCheckStatus</servlet-name>
+	<url-pattern>/checkstatus</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllersAdminLoadMessage</servlet-name>
+	<servlet-class>controllers.admins.message.ControllersAdminLoadMessage</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminLoadMessage</servlet-name>
+	<url-pattern>/loadmessage</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllersAdminCheckOnline</servlet-name>
+	<servlet-class>controllers.admins.message.ControllersAdminCheckOnline</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminCheckOnline</servlet-name>
+	<url-pattern>/checkonline</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ControllersAdminCheckOffline</servlet-name>
+	<servlet-class>controllers.admins.message.ControllersAdminCheckOffline</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminCheckOffline</servlet-name>
+	<url-pattern>/checkoffline</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicAjaxLike</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicAjaxLike</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicAjaxLike</servlet-name>
+	<url-pattern>/like</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicListFavourite</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicListFavourite</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicListFavourite</servlet-name>
+	<url-pattern>/favourite</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminsAccount</servlet-name>
+	<servlet-class>controllers.admins.account.ControllersAdminsAccount</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminsAccount</servlet-name>
+	<url-pattern>/adminaccount</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminAccountDel</servlet-name>
+	<servlet-class>controllers.admins.account.ControllersAdminAccountDel</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminAccountDel</servlet-name>
+	<url-pattern>/delaccount</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminNews</servlet-name>
+	<servlet-class>controllers.admins.news.ControllersAdminNews</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminNews</servlet-name>
+	<url-pattern>/adminnews</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminsNewsChange</servlet-name>
+	<servlet-class>controllers.admins.news.ControllersAdminsNewsChange</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminsNewsChange</servlet-name>
+	<url-pattern>/changenews</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminNewsDel</servlet-name>
+	<servlet-class>controllers.admins.news.ControllersAdminNewsDel</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminNewsDel</servlet-name>
+	<url-pattern>/delnews</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminAccountAdd</servlet-name>
+	<servlet-class>controllers.admins.account.ControllersAdminAccountAdd</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminAccountAdd</servlet-name>
+	<url-pattern>/accountadd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminProductAdd</servlet-name>
+	<servlet-class>controllers.admins.product.ControllersAdminProductAdd</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminProductAdd</servlet-name>
+	<url-pattern>/productadd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminProduct</servlet-name>
+	<servlet-class>controllers.admins.product.ControllersAdminProduct</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminProduct</servlet-name>
+	<url-pattern>/productindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminProductChange</servlet-name>
+	<servlet-class>controllers.admins.product.ControllersAdminProductChange</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminProductChange</servlet-name>
+	<url-pattern>/productchange</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminProductDel</servlet-name>
+	<servlet-class>controllers.admins.product.ControllersAdminProductDel</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminProductDel</servlet-name>
+	<url-pattern>/productdel</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicChangeComment</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicChangeComment</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicChangeComment</servlet-name>
+	<url-pattern>/changeComment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicChangeCommentChildren</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicChangeCommentChildren</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicChangeCommentChildren</servlet-name>
+	<url-pattern>/changeCommentChildren</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicAjaxDelComment</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicAjaxDelComment</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicAjaxDelComment</servlet-name>
+	<url-pattern>/delComment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminContact</servlet-name>
+	<servlet-class>controllers.admins.contact.ControllersAdminContact</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminContact</servlet-name>
+	<url-pattern>/contactindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminHome</servlet-name>
+	<servlet-class>controllers.admins.index.AdminHome</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminHome</servlet-name>
+	<url-pattern>/adminhome</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminContactDel</servlet-name>
+	<servlet-class>controllers.admins.contact.ControllersAdminContactDel</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminContactDel</servlet-name>
+	<url-pattern>/delcontact</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminNewsComment</servlet-name>
+	<servlet-class>controllers.admins.news.comment.ControllersAdminNewsComment</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminNewsComment</servlet-name>
+	<url-pattern>/newscommentsmanagement</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersAdminNewsCommentDel</servlet-name>
+	<servlet-class>controllers.admins.news.comment.ControllersAdminNewsCommentDel</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersAdminNewsCommentDel</servlet-name>
+	<url-pattern>/delCommentAdmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LoginExpert</servlet-name>
+	<servlet-class>controllers.admins.auth.LoginExpert</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginExpert</servlet-name>
+	<url-pattern>/loginexpert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersExpertIndex</servlet-name>
+	<servlet-class>controllers.expert.ControllersExpertIndex</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersExpertIndex</servlet-name>
+	<url-pattern>/expertindex</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersLogoutExpert</servlet-name>
+	<servlet-class>controllers.expert.ControllersLogoutExpert</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersLogoutExpert</servlet-name>
+	<url-pattern>/logoutexpert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicProfile</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicProfile</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicProfile</servlet-name>
+	<url-pattern>/profile</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicProfileExpert</servlet-name>
+	<servlet-class>controllers.expert.ControllersPublicProfileExpert</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicProfileExpert</servlet-name>
+	<url-pattern>/expert</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>ControllersPublicForgotPass</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicForgotPass</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicForgotPass</servlet-name>
+	<url-pattern>/forgotpass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersResetPassword</servlet-name>
+	<servlet-class>controllers.publics.ControllersResetPassword</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersResetPassword</servlet-name>
+	<url-pattern>/resetpass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicConfirmPass</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicConfirmPass</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicConfirmPass</servlet-name>
+	<url-pattern>/confirmpass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ControllersPublicNewPass</servlet-name>
+	<servlet-class>controllers.publics.ControllersPublicNewPass</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ControllersPublicNewPass</servlet-name>
+	<url-pattern>/newpass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminDelMenu</servlet-name>
+	<servlet-class>controllers.admins.index.AdminDelMenu</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminDelMenu</servlet-name>
+	<url-pattern>/delMenu</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LoadSelect</servlet-name>
+	<servlet-class>controllers.admins.index.LoadSelect</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoadSelect</servlet-name>
+	<url-pattern>/loadSelect</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+	<servlet-name>LoginFacebookServlet</servlet-name>
+	<servlet-class>loginfb.LoginFacebookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginFacebookServlet</servlet-name>
+	<url-pattern>/login-facebook</url-pattern>
+</servlet-mapping>
+</web-app>
